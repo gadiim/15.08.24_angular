@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+fieldset {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: larger;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    margin-left: 10px;
+}
+
+svg:hover {
+    border-radius: 50px;
+    box-shadow: 0 0 10px 2px lightslategray;
+}
+
+img {
+    width: auto;
+    object-fit: cover;
+    height: auto;
+}
+
+.task-1 div,
+.task-2 div,
+.task-2 ul,
+.task-2 li,
+.task-2 hr,
+.task-3 div,
+.task-3 ul,
+.task-3 li,
+.task-3 hr,
+.task-4 div,
+.task-4 hr {
+    margin: 10px;
+}
+
+.task-1 div:last-child,
+.task-2 div:last-child,
+.task-3 div:last-child {
+    float: right;
+}
+
+.task-4 {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "head head"
+      "cont1 side"
+      "cont2 side";
+  }
+
+  .task-1 {
+    grid-area: head;
+  }
+  .task-2 {
+    grid-area: cont1;
+  }
+  .task-3 {
+    grid-area: cont2;
+  }
+  .task-4 {
+    grid-area: side;
+  }
